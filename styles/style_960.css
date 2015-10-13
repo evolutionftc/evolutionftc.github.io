@@ -58,10 +58,7 @@ h1 {
 .more {
 	padding: 10px;}
 .more p {
-	border-bottom: 1px solid #807c72;
 	padding: 5px 0px 15px 0px;}
-.more p:last-child {
-	border-bottom: none;}
 .footer {
 	clear: both;
 	background: rgba(0, 0, 0, 0.2);
