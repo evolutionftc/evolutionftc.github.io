@@ -38,13 +38,11 @@ a:hover {
 	padding-top: 10px;}
 .main {
 	background-image: url("../images/main.jpg");
-	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100%;}
 .wrapper {
 	width: 960px;
 	margin: 0px auto;
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
 	text-align: left;}
 .vertical{
 	position: relative;
@@ -61,8 +59,7 @@ h1 {
 	padding: 10px;}
 .more p {
 	border-bottom: 1px solid #807c72;
-	padding: 5px 0px 15px 0px;
-	font-size: 80%;}
+	padding: 5px 0px 15px 0px;}
 .more p:last-child {
 	border-bottom: none;}
 .footer {
@@ -74,5 +71,3 @@ h1 {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 75%;
 	text-align: right;}
-.hideForFade {
-	opacity:0;}
