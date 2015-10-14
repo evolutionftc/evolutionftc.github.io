@@ -13,7 +13,6 @@ body {
 	font-family: QuicksandBook, Helvetica, Arial, sans-serif;
 	font-size: 90%;
 	margin: 0px;
-	text-align: center;
 	line-height: 1.2em;}
 body, html {
 	height: 100%;}
@@ -33,7 +32,7 @@ a:hover {
 	font-size: 105%;}
 .nav {
 	padding: 45px 0px 0px 0px;
-	text-align: right;}
+	text-align: center;}
 .logo {
 	padding-top: 10px;}
 .main {
