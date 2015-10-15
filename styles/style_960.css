@@ -60,7 +60,7 @@ h1 {
 	padding: 5px 0px 15px 0px;}
 .anchor {
 	position: relative;
-	padding-top: 100px;}
+	top: -100px;}
 .footer {
 	clear: both;
 	background: rgba(0, 0, 0, 0.2);
