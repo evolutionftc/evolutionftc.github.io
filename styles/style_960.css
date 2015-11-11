@@ -16,7 +16,7 @@ body {
 body, html {
 	height: 100%;}
 a {
-	color: #b9d5f2;
+	color: #e48343;
 	text-decoration: none;}
 a:hover {
 	color: #ffffff;}
@@ -33,9 +33,9 @@ a:hover {
 	padding: 45px 0px 0px 0px;
 	text-align: center;}
 .logo {
-	padding-top: 10px;}
+	padding-top: 15px;}
 .main {
-	background-image: url("//googledrive.com/host/0B7haQcUeaXq8cm9SbjJZakV0U0k/mountainSnapshot.png");
+	background-image: url("../images/mountainSnapshot.png");
 	background-size: cover;
 	height: 100%;
 	border-bottom: 1px solid #222222;}
