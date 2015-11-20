@@ -23,14 +23,14 @@ a:hover {
 .header {
 	background: rgba(0, 0, 0, 0.7);
 	padding: 0px 0px 0px 0px;
-	height: 80px;
+	height: 70px;
 	position: fixed;
 	top: 0px;
 	width: 100%;
 	z-index: 50;
 	font-size: 105%;}
 .nav {
-	padding: 45px 0px 0px 0px;
+	padding: 37px 0px 0px 0px;
 	text-align: center;}
 .logo {
 	padding-top: 15px;}
