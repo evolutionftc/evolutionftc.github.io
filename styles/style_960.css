@@ -21,7 +21,7 @@ a {
 a:hover {
 	color: #ffffff;}
 .header {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.9);
 	padding: 0px 0px 0px 0px;
 	height: 70px;
 	position: fixed;
@@ -33,9 +33,9 @@ a:hover {
 	padding: 37px 0px 0px 0px;
 	text-align: center;}
 .logo {
-	padding-top: 15px;}
+	padding-top: 10px;}
 .main {
-	background-image: url("../images/mountainSnapshot.png");
+	background-image: url("../images/mt_climb.png");
 	background-size: cover;
 	height: 100%;
 	border-bottom: 1px solid #222222;}
