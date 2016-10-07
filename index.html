@@ -1,109 +1,66 @@
 <!DOCTYPE html>
 <html>
-
+<!-- Designed and written by hand for Team Evolution by Aedan and Kieran Cullen. -->
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Evolution - FTC Team #9867</title>
-<link rel="stylesheet" type="text/css" href="styles/960_12_col.css">
-<link rel="stylesheet" type="text/css" href="styles/style_960.css">
+<title>Evolution Robotics - FTC Team #9867</title>
+<link rel="stylesheet" type="text/css" href="fonts.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Evolution is the FIRST Technical Challenge Team #9867 from Hadley, Massachusetts.">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="scripts/scroller.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="script.js"></script>
 </head>
 
 
 <body>
+<div id="slidercontainer">
 
-<div class="header">
-<div class="container_12">
+<div id="topbar">
 
-<div class="grid_3">
-<a href="#top">
-<img class="logo" src="images/evolution_final_webedit_alpha.png" width="275">
+<img id="toplogo" src="Logo2016_2.png">
+</img>
+
+<a class="toplink" id="start" href="javascript:void(0);" onclick="slide(this,'0');">blog
 </a>
-</div>
+<a class="toplink" href="javascript:void(0);" onclick="slide(this,'-100');">team
+</a>
+<a class="toplink" href="javascript:void(0);" onclick="slide(this,'-200');">robot
+</a>
+<a class="toplink" href="javascript:void(0);" onclick="slide(this,'-300');">sponsors
+</a>
 
-<div class="nav grid_9">
-<a href="#about">About</a> / <a href="#news">News</a> / <a href="#events">Events</a> / <a href="#tech">Technology</a>
-</div>
+</div><!--topbar-->
 
-</div>
-</div>
+<div id="slider">
 
+<div class="slideitem" style="left: 0%;background-color:#f5c57f">
+<div class="slidecontent 0">
+<span class="sectiontitle">What's going on?</span>
+<p class="sectioncontent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For the past month, the team has been working on planning and building a robot base, and programming for the team’s robot and website. So far, we are in the process of doing both.</p>
+</div><!--slidecontent-->
+</div><!--slideitem-->
+<div class="slideitem" style="left: 25%;background-color:#91d7e2">
+<div class="slidecontent -100">
+<span class="sectiontitle">About Us</span>
+<p class="sectioncontent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Evolution Robotics Team had been an FTC Team in the Hadley Public Schools system since September 2015. We had “evolved” from a prior FLL team that was created in September 2010, when one of the original team members, Aedan, found out about the leagues at a FLL competition and was interested in creating one in Hadley Elementary. The rest of the original members of FLL were Alex, Kyle, and Ryan, but later on more people joined such as Kieran and Zach, as well as Cade and Talula. Each team member were assigned to the certain task that had to be achieved in every meeting. Over those years of being part of the league, the team had won various awards for robot design, programming and performance, and innovative project solutions, and took part in several state competitions in almost every year.</p>
+<p class="sectioncontent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By 2015, the older members became too old for being participating in FLL, since they were in their 8th grade, and the whole team moved up to FIRST Tech Challenge, in the summer-fall of that same year. Within the year, we have gained Bobby and Alvin as the newest members. At every meeting taken place in our town’s Senior Center, like in FLL, all the members are assigned to their own tasks that are based on what they preferred, whether it be designing, building, or programming.</p>
+</div><!--slidecontent-->
+</div><!--slideitem-->
+<div class="slideitem" style="left: 50%;background-color:#b1e2a8">
+<div class="slidecontent -200">
+</div><!--slidecontent-->
+</div><!--slideitem-->
+<div class="slideitem" style="left: 75%;background-color:#819690">
+<div class="slidecontent -300">
+</div><!--slidecontent-->
+</div><!--slideitem-->
 
-<a id="top"></a>
-<div class="main">
-<div class="wrapper vertical">
+</div><!--slider-->
 
-<div class="container_12">
-<h1 class="grid_10 push_2">Innovating the world<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of robotics in Hadley.</h1>
-<h2 class="push_6 grid_6"><a href="#about">Learn who we are</a></h2>
-</div>
-
-</div>
-</div>
-
-
-<div class="wrapper more">
-
-<div class="container_12">
-<h2 class="grid_12"><a id="about" class="anchor"></a>About us</h2>
-<p class="push_1 grid_11">Evolution is the FIRST Technical Challenge (FTC) Team #9867, from Hadley, MA. Our members are middle and high school students who work together to build and program robots that accomplish specific tasks. This year, the FTC challenge is called "FIRST Res-Q".</p>
-</div>
-
-</div>
-
-
-<div class="wrapper more">
-
-<div class="container_12">
-<h2 class="grid_12"><a id="news" class="anchor"></a>What's happening recently</h2>
-<p class="push_1 grid_11">11/7:&nbsp;&nbsp;Evolution has conquered the Mountain! At a league idea-sharing meet, our tread-based driving system has proved its effectiveness in climbing the ramps on the playing field this year.</p>
-</div>
-
-</div>
-
-
-<div class="wrapper more">
-
-<div class="container_12">
-<h2 class="grid_12"><a id="events" class="anchor"></a>What we're doing</h2>
-<p class="push_1 grid_11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-</div>
-
-
-<div class="wrapper more">
-
-<div class="container_12">
-<h2 class="grid_12"><a id="tech" class="anchor"></a>Cool things we've created</h2>
-<p class="push_1 grid_11">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-</div>
-
-
-<div class="footer clearfix" id="footer">
-<p>This site was coded by hand by members of Evolution.</p>
-</div>
-
-
-<!-- Analytics code -->
-<script type="text/javascript">
-var clicky_site_ids = clicky_site_ids || [];
-clicky_site_ids.push(100895301);
-(function() {
-  var s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.async = true;
-  s.src = 'https://static.getclicky.com/js';
-  ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-})();
-</script>
-<noscript><p><img width="1" height="1" src="https://in.getclicky.com/100895301ns.gif" /></p></noscript>
-
+</div><!--slidercontainer-->
 </body>
+
+
 </html>
