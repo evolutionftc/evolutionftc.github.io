@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'Bitter Regular';
+    src: url('bitter-regular-webfont.woff2') format('woff2'),
+         url('bitter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Nickelodeon Playoffs Lowercase';
+    src: url('nickelodeon_playoffs_lowercase-webfont.woff2') format('woff2'),
+         url('nickelodeon_playoffs_lowercase-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
