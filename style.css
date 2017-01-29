@@ -6,12 +6,23 @@ body {
 }
 
 a {
+	color: #000000;
+	text-decoration: none;
+}
+
+#navigation a {
 	font-size: 14px;
 	letter-spacing: 3px;
 	width: 25%;
 	text-align: center;
 	margin: 15px;
-	color: #000000;
+}
+
+p a {
+	text-decoration: underline;
+}
+
+p a:hover {
 	text-decoration: none;
 }
 
