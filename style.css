@@ -1,0 +1,77 @@
+
+
+body {
+	font-family: "Slabo 27px";
+	margin: 0;
+}
+
+a {
+	font-size: 120%;
+}
+
+p {
+	line-height: 200%;
+	font-size: 120%;
+	max-width: 90%;
+}
+
+#leftset {
+	position: relative;
+	float: left;
+  	margin: 0px;
+  	width: 50%;
+  	height: 100%;
+
+	background-image: url("evolution-trace.svg");
+  	background-repeat: no-repeat;
+  	background-size: contain;
+  	background-position: center;
+}
+
+#rightset {
+	position: relative;
+	float: right;
+  	margin: 0px;
+  	width: 50%;
+
+  	top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+
+@media (max-width : 1000px) {
+
+#leftset {
+	position: relative;
+	/*float: left;*/
+  	margin: 0px;
+  	width: 100%; /* mod*/
+  	height: 100%; /* mod */
+
+	background-image: url("evolution-trace.svg");
+  	background-repeat: no-repeat;
+  	background-size: contain;
+  	background-position: center;
+}
+
+#rightset {
+	position: relative;
+	/*float: right;*/
+  	margin: 0px;
+  	width: 100%; /* mod */
+
+  	top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+}
+
