@@ -86,7 +86,7 @@ p {
   	width: 100%; /* mod*/
   	height: 100%; /* mod */
 
-	background-image: url("evolution-trace.svg");
+	background-image: url("evolution-trace-notext.svg");
   	background-repeat: no-repeat;
   	background-size: contain;
   	background-position: center;
