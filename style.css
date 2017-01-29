@@ -34,7 +34,6 @@ p {
 }
 
 #navigation {
-	width: 60%;
 	margin-bottom: 10%;
 }
 
@@ -63,6 +62,7 @@ p {
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+
 }
 
 
@@ -93,6 +93,8 @@ p {
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
+
+    margin-bottom: 33%; /* add */
 
 }
 
