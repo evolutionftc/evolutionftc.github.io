@@ -3,7 +3,10 @@
 <head>
 <title>Evolution FTC | Team #9867</title>
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -14,10 +17,14 @@
 <div id="rightset">
 <center>
 <div id="navigation">
-<a>LINK</a><a>LINK</a><a>LINK</a><a>LINK</a>
+<a id="ateam" class="selected" href="javascript:void(0);" onclick="show('team')">TEAM</a>
+<a id="arobot" href="javascript:void(0);" onclick="show('robot')">ROBOT</a>
+<a id="aevents" href="javascript:void(0);" onclick="show('events')">EVENTS</a>
+<a id="asponsors" href="javascript:void(0);" onclick="show('sponsors')">SPONSORS</a>
 </div>
 <div id="content">
-<p>Test content. This is where the content would go, it should look snazzy.</p>
+<p id="team">The Evolution Robotics Team had been an FTC Team in the Hadley Public Schools system since September 2015. We had “evolved” from a prior FLL team that was created in September 2010, when one of the original team members, Aedan, found out about the leagues at a FLL competition and was interested in creating one in Hadley Elementary. The rest of the original members of FLL were Alex, Kyle, and Ryan, but later on more people joined such as Kieran and Zach, as well as Cade and Talula. Each team member were assigned to the certain task that had to be achieved in every meeting. Over those years of being part of the league, the team had won various awards for robot design, programming and performance, and innovative project solutions, and took part in several state competitions in almost every year.</p>
+<p id="robot" class="invisible">roboat</p>
 </div>
 </center>
 </div>

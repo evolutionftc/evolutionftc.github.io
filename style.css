@@ -1,18 +1,41 @@
 
 
 body {
-	font-family: "Slabo 27px";
+	font-family: "Ubuntu Mono";
 	margin: 0;
 }
 
 a {
-	font-size: 120%;
+	font-size: 14px;
+	letter-spacing: 3px;
+	width: 25%;
+	text-align: center;
+	margin: 15px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 p {
 	line-height: 200%;
-	font-size: 120%;
-	max-width: 90%;
+	font-size: 14px;
+	max-width: 80%;
+}
+
+.selected {
+	text-decoration: underline;
+}
+
+.invisible {
+	display: none;
+}
+
+#navigation {
+	width: 60%;
+	margin-bottom: 10%;
 }
 
 #leftset {
