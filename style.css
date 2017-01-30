@@ -49,7 +49,7 @@ p {
 }
 
 #leftset {
-	position: relative;
+	position: absolute;
 	float: left;
   	margin: 0;
   	width: 50%;
@@ -69,10 +69,12 @@ p {
 }
 
 #rightset {
-	position: relative;
+	position: absolute;
 	float: right;
   	margin: 0px;
   	width: 50%;
+
+  	left: 50%;
 
   	top: 50%;
     -ms-transform: translateY(-50%);
@@ -87,10 +89,9 @@ p {
 @media (max-width : 1000px) {
 
 #leftset {
-	position: relative;
+	position: absolute;
 	/*float: left;*/
   	margin: 0px;
-  	padding: 10px;
   	width: 100%; /* mod*/
   	height: 100%;
 
@@ -108,12 +109,14 @@ p {
 }
 
 #rightset {
-	position: relative;
+	position: absolute;
 	/*float: right;*/
   	margin: 0px;
   	width: 100%; /* mod */
 
-  	top: 50%;
+  	left: 0%; /* mod */
+
+  	top: 150%; /* mod */
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
