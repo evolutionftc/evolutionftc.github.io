@@ -11,7 +11,7 @@ a {
 }
 
 #navigation a {
-	font-size: 14px;
+	font-size: 15px;
 	letter-spacing: 3px;
 	width: 25%;
 	text-align: center;
@@ -32,7 +32,7 @@ a:hover {
 
 p {
 	line-height: 200%;
-	font-size: 14px;
+	font-size: 15px;
 	max-width: 80%;
 }
 
@@ -53,7 +53,7 @@ p {
 	float: left;
   	margin: 0;
   	width: 50%;
-  	height: 90%;
+  	height: 100%;
 
 	background-image: url("evolution-trace.svg");
   	background-repeat: no-repeat;
@@ -90,8 +90,9 @@ p {
 	position: relative;
 	/*float: left;*/
   	margin: 0px;
+  	padding: 10px;
   	width: 100%; /* mod*/
-  	height: 90%;
+  	height: 100%;
 
 	background-image: url("evolution-trace.svg");
   	background-repeat: no-repeat;
