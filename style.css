@@ -59,12 +59,6 @@ p {
   	background-size: contain;
   	background-position: center;
 
-  	top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 #rightset {
@@ -99,12 +93,6 @@ p {
   	background-size: contain;
   	background-position: center;
 
-  	top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 #rightset {
@@ -115,14 +103,14 @@ p {
 
   	left: 0%; /* mod */
 
-  	top: 150%; /* mod */
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
+  	top: 125%; /* mod */
+    -ms-transform: none; /* mod */
+    -webkit-transform: none; /* mod */
+    -moz-transform: none; /* mod */
+    -o-transform: none; /* mod */
+    transform: none; /* mod */
 
-    margin-bottom: 33%; /* add */
+    margin-bottom: 75%; /* add */
 
 }
 
