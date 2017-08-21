@@ -1,0 +1,763 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Lego Digital Designer</title>
+		
+		<style type="text/css">
+			
+			div
+			{
+			    font-family:arial,sans-serif; 
+			    font-size: 11px;
+			    color:#000000;
+			}
+			
+			.header 
+			{
+			    width:1024px;
+			    background-image:none;
+			    background-repeat:repeat-x;
+			    background-color: #000000;
+			    height:0px;
+			    padding-left:10px;
+			}
+            
+            .headerPrint
+			{
+			    display:none;
+			}
+			
+			.footer
+			{
+			    font-size:10px;
+			    text-align:center;
+			    width:1024px;
+			}
+			
+			.nav
+			{
+			    text-align:center;
+			    width:1024px;
+			}
+			
+			.step
+			{
+			    display:none;
+			}
+
+			.stepdisplay
+			{
+			    display:block;
+			    width:1024px;
+			    height:620px;
+			}
+			
+			.modelParts 
+			{ 
+			    list-style-type:none; 
+			    padding:4px 0px 0px 0px; 
+			    margin:0px; 
+			}
+			.modelParts ul 
+			{ 
+			    list-style-type:none; 
+			    float:left; 
+			    padding:5px 0px 0px 5px; 
+			    width:140px; 
+			    border:1px dotted gray; 
+			    margin:0px 
+			 }
+			.modelParts ul li 
+			{ 
+			    padding:0px; 
+			    margin:0px 
+			}
+			.modelParts ul li img 
+			{ 
+			    padding:0px; 
+			    height:64px; 
+			    width:64px; 
+			    margin-left:15px 
+			}
+			
+			.stepTextTop p 
+			{ 
+			    margin:0px; 
+			    padding:10px 0px 0px 0px;  
+			 }
+			.stepText p
+			{ 
+			    margin:0px; 
+			    width:30px; 
+			    padding:25px 0px 0px 10px;
+			}
+            
+            .biElement
+            {
+                float:left;
+                margin:20px;
+                width:280px;
+                
+            }
+            
+            .stepelements
+            {
+                width:1024px;
+			    height:620px;
+                overflow:auto;
+            }
+            
+			
+		</style>
+
+        <style type="text/css" media="print">
+            .nav
+			{
+			    display:none;
+			}
+			
+			.stepdisplay
+			{
+			    display:none;
+			}
+            
+            .stepelements
+			{
+			    display:none;
+			}
+            
+            .header
+			{
+			    display:none;
+			}
+            
+            .headerPrint
+			{
+			    display:block;
+			}
+			
+			.step
+			{
+			    display:block;
+			    width:1024px;
+			    height:620px;
+			    page-break-after:always;
+			}
+            
+            .biElement
+            {
+                width:280px;                
+            }
+            
+        </style>
+
+        <script language="javascript" type="text/javascript">
+            
+            var biCurStep=0;
+            
+            function returnTest(e) {
+                var keynum = 0;
+                if (window.event) {
+                    keynum = e.keyCode
+                }
+                else if (e.which) {
+                    keynum = e.which
+                }
+                if (keynum == 13) 
+                {
+                    try {
+                        biStep(parseInt(window.document.getElementById('stepNumber').value,10));
+                    } 
+                    catch(err) {
+                        biStep(0);
+                    }
+                }
+            }
+
+            function biStep(step) {
+
+                if (step>23+1) step=23+1;
+                if (step<0) step=0;
+
+                for (var i=0;i<23+2;i++) {
+                    var id='step_' + i.toString();
+                    var cn='stepdisplay';
+                    if (i==23+1) {
+                        cn='stepelements';
+                        id='step_elements';
+                    }
+                    
+                    if (i==step) {
+                        window.document.getElementById('step_display').innerHTML=window.document.getElementById(id).innerHTML;
+						   window.document.getElementById('step_display').className=cn;
+                    }
+                }
+                window.document.getElementById('stepNumber').value=step.toString();
+                biCurStep=step;
+            }
+        </script>
+	</head>
+	<body onload="biStep(0)">
+        <div class="header"></div>
+        <div class="headerPrint"></div>
+		
+        <div class="stepdisplay" id="step_display"></div>
+
+        <div class="step" id="step_0">
+            <div style="float:left;width:150px"><p>Model Name:<br /><span style="font-weight:bold">Goodwinner Base</span><br /><br />Number of Bricks: <span style="font-weight:bold">51</span></p></div>
+            <div style="float:left"><img height="600" width="800" src="images/Step23.png" /></div>
+            <div style="clear:both"></div>
+        </div>
+
+			
+        <div class="step" id="step_1">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 1 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick0.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick2.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick3.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step1.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_2">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 2 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick2.png" /></li>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick3.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step2.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_3">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 3 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick2.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick3.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step3.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_4">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 4 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step4.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_5">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 5 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick0.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick4.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step5.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_6">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 6 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick5.png" /></li>
+							<li class="stepText"><p>3 x</p></li>
+							<li><img height="64" width="64" src="images/Brick4.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step6.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_7">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 7 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick6.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick5.png" /></li>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick4.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step7.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_8">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 8 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step8.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_9">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 9 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick7.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step9.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_10">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 10 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick8.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick9.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick7.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step10.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_11">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 11 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step11.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_12">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 12 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick10.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step12.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_13">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 13 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick11.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step13.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_14">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 14 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick12.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick11.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick4.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step14.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_15">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 15 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick10.png" /></li>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick13.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step15.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_16">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 16 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step16.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_17">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 17 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step17.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_18">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 18 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick12.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick10.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick13.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step18.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_19">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 19 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick14.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step19.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_20">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 20 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step20.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_21">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 21 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick4.png" /></li>
+							<li class="stepText"><p>1 x</p></li>
+							<li><img height="64" width="64" src="images/Brick10.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step21.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_22">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 22 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick8.png" /></li>
+							<li class="stepText"><p>2 x</p></li>
+							<li><img height="64" width="64" src="images/Brick1.png" /></li>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step22.png" /></div>
+            <div style="clear:both"></div>
+        </div>			
+        <div class="step" id="step_23">
+            <div style="float:left">
+                <div class="stepTextTop"><p><span style="font-weight:bold">Step 23 of 23</span></p></div>
+				<div class="modelParts">
+					<ul>
+
+					</ul>
+				</div>
+            </div>
+            <div style="float:left"><img height="600" width="800" src="images/Step23.png" /></div>
+            <div style="clear:both"></div>
+        </div>
+
+        <div class="step" id="step_elements">
+            				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>4&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick8.png" /></td>
+					        <td>6024581</td>
+					        <td>CABLE 250 MM - Black,Transparent</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>2&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick12.png" /></td>
+					        <td>6057952</td>
+					        <td>MS 2013 ENGINE - White,Bright Red,Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>1&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick9.png" /></td>
+					        <td>6009996</td>
+					        <td>MS-EV3, P-BRICK - White,Transparent,Medium Stone Grey,Dark Stone Grey,Silver Metallic</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>1&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick6.png" /></td>
+					        <td>4495930</td>
+					        <td>TECHNIC 7M BEAM - Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>2&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick5.png" /></td>
+					        <td>4141270</td>
+					        <td>TECHNIC ANG. BEAM 4X2 90 DEG - Bright Red</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>2&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick0.png" /></td>
+					        <td>4611705</td>
+					        <td>TECHNIC 11M BEAM - Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>2&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick11.png" /></td>
+					        <td>4522934</td>
+					        <td>TECHNIC 13M BEAM - Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>12&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick1.png" /></td>
+					        <td>4121715</td>
+					        <td>CONNECTOR PEG W. FRICTION - Black</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>4&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick2.png" /></td>
+					        <td>4206482</td>
+					        <td>CONN.BUSH W.FRIC./CROSSALE - Bright Blue</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>8&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick4.png" /></td>
+					        <td>4514553</td>
+					        <td>CONNECTOR PEG W. FRICTION 3M - Bright Blue</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>4&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick3.png" /></td>
+					        <td>4211775</td>
+					        <td>CROSS BLOCK 90° - Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>5&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick10.png" /></td>
+					        <td>4140806</td>
+					        <td>2M FRIC. SNAP W/CROSS HOLE - Bright Red</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>2&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick7.png" /></td>
+					        <td>4225033</td>
+					        <td>BEAM 3 M. W/4 SNAPS - Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>3&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick13.png" /></td>
+					        <td>4539880</td>
+					        <td>BEAM FRAME 5X7 Ø 4.85 - Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+				<div class="biElement">
+                    <table border="0">
+                        <tr style="vertical-align:middle">
+					        <td>1&nbsp;x</td>
+					        <td><img height="64" width="64" src="images/Brick14.png" /></td>
+					        <td>4540797</td>
+					        <td>BEAM H. FRAME 5X11 Ø4.85 - Medium Stone Grey</td>
+				        </tr>
+                    </table>
+                </div>
+                
+
+            <div style="clear:both"></div>
+        </div>
+
+        <div id="nav"  class="nav">
+            <table style="margin:0 auto" border="0">
+                <tr>
+                    <td><a onclick="biStep(0);" href="#"><img border="0" alt="First" src="images/Images/Arrow_First.png" /></a></td>
+                    <td><a onclick="biStep(biCurStep-1);" href="#"><img border="0" alt="First" src="images/Images/Arrow_Backward.png" /></a></td>
+                    <td><input id="stepNumber" onkeydown="returnTest(window.event)" type="text" style="text-align:center;width:56px;height:28px;border:1px solid #cccccc;font-size:14px;font-weight:bold" /></td>
+                    <td><a onclick="biStep(biCurStep+1);" href="#"><img border="0" alt="First" src="images/Images/Arrow_Forward.png" /></a></td>
+                    <td><a onclick="biStep(23+1);" href="#"><img border="0" alt="First" src="images/Images/Arrow_Last.png" /></a></td>
+                    <td style="width:40px">&nbsp;</td>
+                    <td><a onclick="window.print();return false;" href="#"><img border="0" alt="Print" src="images/Images/PrintIcon.png" /></a></td>
+                </tr>
+            </table>
+        </div> 
+		<div style="clear:both;">&nbsp;</div>
+		<div class="footer">© 2012 The LEGO Group. All rights reserved.<br />
+Use of the LEGO Digital Designer html print tool, signifies your agreement to the terms of use.</div>
+	</body>
+</html>
